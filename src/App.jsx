@@ -22,8 +22,41 @@ function weeklyWage(emp) {
   return rate * hours
 }
 
+const SEED_EMPLOYEES = [
+  { name: 'Alice Johnson',    role: 'Project Manager',       rateType: 'Salary', rate: '95000',  hoursPerWeek: '40' },
+  { name: 'Brian Torres',     role: 'Senior Developer',      rateType: 'Salary', rate: '120000', hoursPerWeek: '40' },
+  { name: 'Carmen Lee',       role: 'UX Designer',           rateType: 'Salary', rate: '85000',  hoursPerWeek: '40' },
+  { name: 'David Kim',        role: 'DevOps Engineer',       rateType: 'Salary', rate: '110000', hoursPerWeek: '40' },
+  { name: 'Elena Russo',      role: 'QA Engineer',           rateType: 'Hourly', rate: '45',     hoursPerWeek: '40' },
+  { name: 'Frank Nguyen',     role: 'Junior Developer',      rateType: 'Hourly', rate: '35',     hoursPerWeek: '40' },
+  { name: 'Grace Patel',      role: 'Data Analyst',          rateType: 'Salary', rate: '78000',  hoursPerWeek: '40' },
+  { name: 'Henry Brooks',     role: 'Backend Developer',     rateType: 'Salary', rate: '105000', hoursPerWeek: '40' },
+  { name: 'Irene Walsh',      role: 'Frontend Developer',    rateType: 'Salary', rate: '98000',  hoursPerWeek: '40' },
+  { name: 'James Okafor',     role: 'Scrum Master',          rateType: 'Salary', rate: '90000',  hoursPerWeek: '40' },
+  { name: 'Karen Müller',     role: 'Business Analyst',      rateType: 'Salary', rate: '82000',  hoursPerWeek: '40' },
+  { name: 'Liam Chen',        role: 'Mobile Developer',      rateType: 'Salary', rate: '102000', hoursPerWeek: '40' },
+  { name: 'Mia Fernandez',    role: 'Product Owner',         rateType: 'Salary', rate: '115000', hoursPerWeek: '40' },
+  { name: 'Noah Singh',       role: 'Cloud Architect',       rateType: 'Salary', rate: '130000', hoursPerWeek: '40' },
+  { name: 'Olivia Grant',     role: 'Technical Writer',      rateType: 'Hourly', rate: '38',     hoursPerWeek: '32' },
+  { name: 'Paul Martinez',    role: 'Security Engineer',     rateType: 'Salary', rate: '118000', hoursPerWeek: '40' },
+  { name: 'Quinn Adams',      role: 'Support Specialist',    rateType: 'Hourly', rate: '28',     hoursPerWeek: '40' },
+  { name: 'Rachel Yip',       role: 'Data Scientist',        rateType: 'Salary', rate: '125000', hoursPerWeek: '40' },
+  { name: 'Samuel Brown',     role: 'Full Stack Developer',  rateType: 'Salary', rate: '108000', hoursPerWeek: '40' },
+  { name: 'Tina Kowalski',    role: 'HR Coordinator',        rateType: 'Salary', rate: '68000',  hoursPerWeek: '40' },
+  { name: 'Umar Hassan',      role: 'Network Engineer',      rateType: 'Salary', rate: '95000',  hoursPerWeek: '40' },
+  { name: 'Vera Johansson',   role: 'Graphic Designer',      rateType: 'Hourly', rate: '40',     hoursPerWeek: '30' },
+  { name: 'William Park',     role: 'Database Admin',        rateType: 'Salary', rate: '100000', hoursPerWeek: '40' },
+  { name: 'Xena Dubois',      role: 'Marketing Analyst',     rateType: 'Salary', rate: '72000',  hoursPerWeek: '40' },
+  { name: 'Yusuf Ali',        role: 'AI/ML Engineer',        rateType: 'Salary', rate: '135000', hoursPerWeek: '40' },
+  { name: 'Zoe Thompson',     role: 'Copywriter',            rateType: 'Hourly', rate: '32',     hoursPerWeek: '25' },
+  { name: 'Aaron Mitchell',   role: 'Sales Engineer',        rateType: 'Salary', rate: '88000',  hoursPerWeek: '40' },
+  { name: 'Bella Rossi',      role: 'Accountant',            rateType: 'Salary', rate: '75000',  hoursPerWeek: '40' },
+  { name: 'Carlos Vega',      role: 'IT Support',            rateType: 'Hourly', rate: '30',     hoursPerWeek: '40' },
+  { name: 'Diana Osei',       role: 'Compliance Officer',    rateType: 'Salary', rate: '92000',  hoursPerWeek: '40' },
+].map(e => ({ ...e, id: uid() }))
+
 export default function App() {
-  const [employees, setEmployees] = useState([defaultEmployee()])
+  const [employees, setEmployees] = useState(SEED_EMPLOYEES)
   const [markup, setMarkup] = useState('30')
   const [projects, setProjects] = useState([{ id: uid(), name: '', weeks: '1', assignedIds: {} }])
 
