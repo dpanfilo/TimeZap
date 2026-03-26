@@ -34,15 +34,14 @@ const SEED_EMPLOYEES = [
   { name: 'Darlene Parker',      role: 'Administrative', rateType: 'Hourly', rate: '28', hoursPerWeek: '40' },
   { name: 'Olivia Carlin',       role: 'Administrative', rateType: 'Hourly', rate: '27', hoursPerWeek: '40' },
   { name: 'Lourdes Aguirre',     role: 'Administrative', rateType: 'Hourly', rate: '26', hoursPerWeek: '40' },
-  // Field (5) — avg $25/hr
-  { name: 'Brett Williams',      role: 'Field',          rateType: 'Hourly', rate: '26', hoursPerWeek: '40' },
+  // Field (3) — avg $25/hr
   { name: 'David Reyes',         role: 'Field',          rateType: 'Hourly', rate: '26', hoursPerWeek: '40' },
   { name: 'Joe Mednansky',       role: 'Field',          rateType: 'Hourly', rate: '25', hoursPerWeek: '40' },
-  { name: 'Jovani Mendoza',      role: 'Field',          rateType: 'Hourly', rate: '24', hoursPerWeek: '40' },
   { name: 'Rafal Glodz',         role: 'Field',          rateType: 'Hourly', rate: '24', hoursPerWeek: '40' },
-  // Drafters (26) — $28/hr
+  // Drafters (28 people) — $28/hr
   { name: 'Alan Saavedra',       role: 'Drafter',        rateType: 'Hourly', rate: '28', hoursPerWeek: '40' },
   { name: 'Berenice Medina',     role: 'Drafter',        rateType: 'Hourly', rate: '28', hoursPerWeek: '40' },
+  { name: 'Brett Williams',      role: 'Drafter',        rateType: 'Hourly', rate: '28', hoursPerWeek: '40' },
   { name: 'Carlos Flores',       role: 'Drafter',        rateType: 'Hourly', rate: '28', hoursPerWeek: '40' },
   { name: 'Cristo Panfilo',      role: 'Drafter',        rateType: 'Hourly', rate: '28', hoursPerWeek: '40' },
   { name: 'Cynthia Salgado',     role: 'Drafter',        rateType: 'Hourly', rate: '28', hoursPerWeek: '40' },
@@ -54,6 +53,7 @@ const SEED_EMPLOYEES = [
   { name: 'Jonathan Flores',     role: 'Drafter',        rateType: 'Hourly', rate: '28', hoursPerWeek: '40' },
   { name: 'Jorge Ramos',         role: 'Drafter',        rateType: 'Hourly', rate: '28', hoursPerWeek: '40' },
   { name: 'Joseph Hyzy',         role: 'Drafter',        rateType: 'Hourly', rate: '28', hoursPerWeek: '40' },
+  { name: 'Jovani Mendoza',      role: 'Drafter',        rateType: 'Hourly', rate: '28', hoursPerWeek: '40' },
   { name: 'Julian Hernandez',    role: 'Drafter',        rateType: 'Hourly', rate: '28', hoursPerWeek: '40' },
   { name: 'Julio Matus',         role: 'Drafter',        rateType: 'Hourly', rate: '28', hoursPerWeek: '40' },
   { name: 'Karen Montalvo',      role: 'Drafter',        rateType: 'Hourly', rate: '28', hoursPerWeek: '40' },
