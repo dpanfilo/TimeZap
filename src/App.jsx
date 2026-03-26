@@ -23,14 +23,14 @@ function weeklyWage(emp) {
 }
 
 const SEED_EMPLOYEES = [
-  // Administrative (3)
-  { name: 'Alice Johnson',    role: 'Administrative',  rateType: 'Salary', rate: '95000',  hoursPerWeek: '40' },
-  { name: 'Brian Torres',     role: 'Administrative',  rateType: 'Salary', rate: '85000',  hoursPerWeek: '40' },
-  { name: 'Carmen Lee',       role: 'Administrative',  rateType: 'Salary', rate: '78000',  hoursPerWeek: '40' },
-  // Field (3)
-  { name: 'David Kim',        role: 'Field',           rateType: 'Hourly', rate: '35',     hoursPerWeek: '40' },
-  { name: 'Elena Russo',      role: 'Field',           rateType: 'Hourly', rate: '32',     hoursPerWeek: '40' },
-  { name: 'Frank Nguyen',     role: 'Field',           rateType: 'Hourly', rate: '30',     hoursPerWeek: '40' },
+  // Administrative (3) — avg $27/hr
+  { name: 'Alice Johnson',    role: 'Administrative',  rateType: 'Hourly', rate: '28',     hoursPerWeek: '40' },
+  { name: 'Brian Torres',     role: 'Administrative',  rateType: 'Hourly', rate: '27',     hoursPerWeek: '40' },
+  { name: 'Carmen Lee',       role: 'Administrative',  rateType: 'Hourly', rate: '26',     hoursPerWeek: '40' },
+  // Field (3) — avg $25/hr
+  { name: 'David Kim',        role: 'Field',           rateType: 'Hourly', rate: '26',     hoursPerWeek: '40' },
+  { name: 'Elena Russo',      role: 'Field',           rateType: 'Hourly', rate: '25',     hoursPerWeek: '40' },
+  { name: 'Frank Nguyen',     role: 'Field',           rateType: 'Hourly', rate: '24',     hoursPerWeek: '40' },
   // Drafters (24)
   { name: 'Grace Patel',      role: 'Drafter',         rateType: 'Hourly', rate: '28',     hoursPerWeek: '40' },
   { name: 'Henry Brooks',     role: 'Drafter',         rateType: 'Hourly', rate: '28',     hoursPerWeek: '40' },
