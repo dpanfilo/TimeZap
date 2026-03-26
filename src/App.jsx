@@ -60,7 +60,7 @@ const SEED_EMPLOYEES = [
 
 export default function App() {
   const [employees, setEmployees] = useState(SEED_EMPLOYEES)
-  const [markup, setMarkup] = useState('30')
+  const [markup, setMarkup] = useState('146')
   const [projects, setProjects] = useState([{ id: uid(), name: '', weeks: '1', assignedIds: {} }])
 
   // ── employee helpers ──────────────────────────────────────────────────────
