@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import HealthCheck from './HealthCheck.jsx'
 
 const RATE_TYPES = ['Hourly', 'Salary']
 
@@ -423,6 +424,8 @@ export default function App() {
           )
         })}
       </section>
+
+      <HealthCheck employees={employees} markup={markup} />
 
       <footer className="app-footer">
         <p>TimeZap · Salary figures calculated over 52 weeks · Hourly figures × hours/week</p>
