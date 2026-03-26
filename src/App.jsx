@@ -3,6 +3,12 @@ import './App.css'
 
 const RATE_TYPES = ['Hourly', 'Salary']
 
+const ROLE_DEFAULT_HOURS = {
+  'Drafter': '9',
+  'Field': '3',
+  'Administrative': '3',
+}
+
 function uid() {
   return Math.random().toString(36).slice(2)
 }
@@ -371,7 +377,7 @@ export default function App() {
                           checked={assigned}
                           onChange={() => {
                             if (!assigned) {
-                              updateEmpHoursOnProject(project.id, emp.id, emp.rateType === 'Salary' ? '40' : emp.hoursPerWeek)
+                              updateEmpHoursOnProject(project.id, emp.id, ROLE_DEFAULT_HOURS[emp.role] || emp.hoursPerWeek)
                             } else {
                               toggleAssign(project.id, emp.id)
                             }
